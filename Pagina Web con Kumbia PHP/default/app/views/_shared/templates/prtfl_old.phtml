@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Load Roboto font -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="keywords" content="Innertechnology, innertechology, desarrollo software libre, linux" />
+        <meta name="description" content="Apoyamos el emprendimiento utilizando software libre, con un servicio de soporte t�cnico y desarrollando sitios y aplicaciones web" />
+
+        <title>::.. InnerTechnology ..::</title>
+
+        <!-- core CSS -->
+        <link href="<?php echo PUBLIC_PATH ?>css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?php echo PUBLIC_PATH ?>css/font-awesome.min.css" rel="stylesheet">
+        <link href="<?php echo PUBLIC_PATH ?>css/animate.min.css" rel="stylesheet">
+        <link href="<?php echo PUBLIC_PATH ?>css/owl.carousel.css" rel="stylesheet">
+        <link href="<?php echo PUBLIC_PATH ?>css/owl.transitions.css" rel="stylesheet">
+        <link href="<?php echo PUBLIC_PATH ?>css/prettyPhoto.css" rel="stylesheet">
+        <link href="<?php echo PUBLIC_PATH ?>css/main.css" rel="stylesheet">
+        <link href="<?php echo PUBLIC_PATH ?>css/responsive.css" rel="stylesheet">
+        <link href="<?php echo PUBLIC_PATH ?>css/style.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <link rel="shortcut icon" href="img/logoblanco.ico">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo PUBLIC_PATH ?>img/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo PUBLIC_PATH ?>img/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo PUBLIC_PATH ?>img/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="<?php echo PUBLIC_PATH ?>img/ico/apple-touch-icon-57-precomposed.png">
+
+        <!-- iconos -->
+        <!-- <link href="fonts/ico//nva/css/all.css" rel="stylesheet" /> -->
+
+        <!-- Fav and touch icons -->
+            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/logo_negro.jpeg">
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114.png">
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72.png">
+            <link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57.png">
+
+    </head>
+
+    <body id="page-top">
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+                <div class="container">
+                <a href="<?php echo PUBLIC_PATH ?>" style="text-decoration: none;"> <span style="color:#fff; text-transform:capitalize;">Inner<span style="color:#4BB9DC;">Technology</a>
+                <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?php echo PUBLIC_PATH ?>"><span style="color:#fff; text-transform:capitalize;">Quiénes somos</a>
+                    </li>
+
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio"><span style="color:#fff; text-transform:capitalize;">Portafolio</a>
+                    </li>
+
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact"><span style="color:#fff; text-transform:capitalize;">Cotizar</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        <!-- .Navegation -->
+
+        <!-- contenido -->
+        <?php View::content() ?>
+
+        <!-- footer -->
+        <?php View::partial('innert/footer') ?>
+    </body>
+
+
+</html>
