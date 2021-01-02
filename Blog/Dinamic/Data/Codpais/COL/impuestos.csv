@@ -1,0 +1,7 @@
+"codimpuesto";"codsubcuentarep";"codsubcuentasop";"descripcion";"tipo";"iva";"recargo";"coddian"
+BOL;;;BOLSA;2;40.0;0.0;"22"
+EXCTO;;;EXCENTO;1;0.0;0.0;
+IPOC4;;;IPOCONSUMO 4%;1;4.0;0.0;"04"
+IPOC8;;;IPOCONSUMO 8%;1;8.0;0.0;"04"
+IVA19;;;IVA 19%;1;19.0;0.0;"01"
+IVA8;;;IVA 8%;1;8.0;0.0;"01"

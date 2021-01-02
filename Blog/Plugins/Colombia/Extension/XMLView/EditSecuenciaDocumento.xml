@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <columns>
+        <group name="data" numcolumns="12">
+            <column name="prefijo" numcolumns="2" description="optional" order="150">
+                <widget type="text" maxlength="4" fieldname="prefijo"/>
+            </column>
+            <column name="resolucion" numcolumns="2" description="optional" order="160">
+                <widget type="number" fieldname="resolucion"/>
+            </column>
+            <column name="fecha-resolucion" numcolumns="2" description="optional" order="170">
+                <widget type="date" maxlength="10" fieldname="fecharesolucion"/>
+            </column>
+            <column name="llave-tecnica" numcolumns="4" description="optional" order="180">
+                <widget type="text" maxlength="80" fieldname="llavetecnica"/>
+            </column>
+            <column name="number-from" numcolumns="2" order="190" required="true">
+                <widget type="number" fieldname="desde" decimal="0" min="1"/>
+            </column>
+            <column name="number" numcolumns="2" order="200" required="true" overwrite="true">
+                <widget type="number" fieldname="numero" decimal="0" min="1"/>
+            </column>
+            <column name="number-to" numcolumns="2" description="optional" order="210">
+                <widget type="number" fieldname="hasta" decimal="0" min="1"/>
+            </column>
+            <column name="number-length" numcolumns="2" order="220" required="true" overwrite="true">
+                <widget type="number" fieldname="longnumero" decimal="0" min="1"/>
+            </column>
+            <column name="fecha-desde" numcolumns="2" description="optional" order="230">
+                <widget type="date" maxlength="10" fieldname="fechadesde"/>
+            </column>
+            <column name="fecha-hasta" numcolumns="2" description="optional" order="240">
+                <widget type="date" maxlength="10" fieldname="fechahasta"/>
+            </column>
+            <column name="pattern" order="250" required="true" overwrite="true">
+                <widget type="text" fieldname="patron" maxlength="30"/>
+            </column>
+            <column name="use-gaps" numcolumns="2" order="260" overwrite="true">
+                <widget type="checkbox" fieldname="usarhuecos" />
+            </column>
+        </group>
+    </columns>
+</view>

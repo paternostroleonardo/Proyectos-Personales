@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <columns>
+        <group name="fe" icon="fas fa-user-secret" title="api-data" numcolumns="12">
+            <column name="name" display="none" order="0">
+                <widget type="text" fieldname="name" readonly="true" required="true"/>
+            </column>
+            <column name="token" numcolumns="12" order="100" titleurl="https://apifacturascripts.soenac.com">
+                <widget type="password" maxlength="80" fieldname="token" icon="fas fa-key" required="true"/>
+            </column>
+        </group>
+        <group name="software" icon="fas fa-user-cog" title="software" numcolumns="12">
+            <column name="software" numcolumns="6" order="110" titleurl="https://apifacturascripts.soenac.com">
+                <widget type="text" maxlength="50" fieldname="identifier" required="true"/>
+            </column>
+            <column name="pin" numcolumns="6" order="120" titleurl="https://apifacturascripts.soenac.com">
+                <widget type="text" maxlength="5" fieldname="pin" required="true"/>
+            </column>
+            <column name="environment" numcolumns="6" order="130" titleurl="https://apifacturascripts.soenac.com">
+                <widget type="select" fieldname="type_environment_id" translate="true" required="true">
+                    <values title="Pruebas">2</values>
+                    <values title="Producción">1</values>
+                </widget>
+            </column>
+            <column name="test-set" numcolumns="6" order="140" titleurl="https://apifacturascripts.soenac.com">
+                <widget type="text" maxlength="36" fieldname="set_test" required="true"/>
+            </column>
+        </group>
+        <group name="certificate-data" icon="fas fa-user-shield" title="certificate-data" numcolumns="12">
+            <column name="certificate-p12-base64" numcolumns="12" order="100" titleurl="https://apifacturascripts.soenac.com">
+                <widget type="textarea" fieldname="certificatebase64" required="true"/>
+            </column>
+            <column name="certificate-pasword" numcolumns="12" order="110" titleurl="https://apifacturascripts.soenac.com">
+                <widget type="password" maxlength="20" fieldname="certificatepassword" icon="fas fa-key" required="true"/>
+            </column>
+        </group>
+    </columns>
+</view>

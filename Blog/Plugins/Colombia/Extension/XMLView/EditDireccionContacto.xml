@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <columns>
+        <group name="data" numcolumns="12">
+            <column name="country" titleurl="ListPais" order="160" overwrite="true">
+                <widget type="autocomplete" fieldname="codpais" onclick="EditPais" required="true" overwrite="true">
+                    <values source="paises" fieldcode="codiso" fieldtitle="nombre"></values>
+                </widget>
+            </column>
+            <column name="province" numcolumns="3" order="170" required="true" overwrite="true">
+                <widget type="autocomplete" fieldname="provincia" required="true">
+                    <values source="provincias" fieldcode="codeid" fieldtitle="provincia"></values>
+                </widget>
+            </column>
+            <column name="city" numcolumns="4" order="180" overwrite="true">
+                <widget type="autocomplete" fieldname="ciudad" required="true">
+                    <values source="ciudades" fieldcode="codeid" fieldtitle="ciudad"></values>
+                </widget>
+            </column>
+        </group>
+    </columns>
+</view>

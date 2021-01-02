@@ -1,0 +1,5 @@
+"codpago";"descripcion";"domiciliado";"idempresa";"pagado";"plazovencimiento";"tipovencimiento";"tipo";"metodopago"
+CONT;Al contado;0;1;0;0;days;1;"10"
+PAYPAL;PayPal;0;1;0;0;days;1;ZZZ
+TARJETA;Tarjeta de crédito;0;1;0;0;days;1;"48"
+TRANS;Transferencia bancaria;0;1;0;1;months;1;"49"

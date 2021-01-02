@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <columns>
+        <group name="dian" numcolumns="12" valign="bottom">
+            <column name="type-tax" numcolumns="3" order="100">
+                <widget type="select" fieldname="coddian" maxlength="6" required="true">
+                    <values title="Impuesto sobre la Ventas">01</values>
+                    <values title="Impuesto al Consumo Departamental">02</values>
+                    <values title="Impuesto de Industria, Comercio y Aviso">03</values>
+                    <values title="Impuesto Nacional al Consumo">04</values>
+                    <values title="Retención sobre el IVA">05</values>
+                    <values title="Retención sobre Renta">06</values>
+                    <values title="Retención sobre el ICA">07</values>
+                    <values title="Cuota de Fomento Hortifrutícula">20</values>
+                    <values title="Impuesto de Timbre">21</values>
+                    <values title="Impuesto Nacional al Consumo de Bolsa Plástica">22</values>
+                    <values title="Impuesto Nacional del Carbono">23</values>
+                    <values title="Impuesto Nacional a los Combustibles">24</values>
+                    <values title="Sobretasa a los combustibles">25</values>
+                    <values title="Contribución minoristas (Combustibles)">26</values>
+                    <values title="No responsable de tributo">ZY</values>
+                    <values title="Otros tributos, tasas, contribuciones, y similares">ZZ</values>
+                </widget>
+            </column>
+        </group>
+    </columns>
+</view>

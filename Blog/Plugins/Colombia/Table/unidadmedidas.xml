@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <column>
+        <name>codunidadmedida</name>
+        <type>character varying(5)</type>
+        <null>NO</null>
+    </column>
+    <column>
+        <name>descripcion</name>
+        <type>character varying(100)</type>
+        <null>NO</null>
+    </column>
+    <constraint>
+        <name>codunidadmedida_pkey</name>
+        <type>PRIMARY KEY (codunidadmedida)</type>
+    </constraint>
+</table>

@@ -1,0 +1,38 @@
+{
+    "name": "vendor/colombia",
+    "type": "fs2018-plugin",
+    "description": "Electronic Billing Colombia prior validation UBL 2.1.",
+    "version": "v1.2",
+    "homepage": "https://apifacturascripts.soenac.com",
+    "keywords": [
+        "colombia",
+        "soenac",
+        "ubl2.1",
+        "dian",
+        "xml",
+        "api",
+        "fs",
+        "fe"
+    ],
+    "license": "EULA",
+    "authors": [
+        {
+            "name": "Frank Aguirre",
+            "email": "faguirre@soenac.com",
+            "homepage": "https://soenac.com"
+        }
+    ],
+    "support": {
+        "email": "faguirre@soenac.com",
+        "irc": "https://soenac.com/contacto"
+    },
+    "require": {
+        "symfony/var-dumper": "^4.3",
+        "symfony/console": "^4.3",
+        "guzzlehttp/guzzle": "^6.4",
+        "simplesoftwareio/simple-qrcode": "^2.0"
+    },
+    "autoload": {
+        "files": ["bootstrap.php"]
+    }
+}

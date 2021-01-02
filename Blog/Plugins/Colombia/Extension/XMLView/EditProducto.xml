@@ -1,0 +1,11 @@
+<view>
+    <columns>
+        <group name="data" numcolumns="12">
+            <column name="unidad-de-medida" titleurl="ListUnidadMedida" numcolumns="3" order="1000">
+                <widget type="select" fieldname="codunidadmedida" onclick="EditUnidadMedida" required="true">
+                    <values source="unidadmedidas" fieldcode="codunidadmedida" fieldtitle="descripcion"/>
+                </widget>
+            </column>
+        </group>
+    </columns>
+</view>

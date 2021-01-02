@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <columns>
+        <group name="dian" numcolumns="12" valign="bottom">
+            <column name="reference-price" numcolumns="3" order="100">
+                <widget type="select" fieldname="precioreferencia" maxlength="6" required="true">
+                    <values title="Valor comercial">01</values>
+                    <values title="Valor en inventarios">02</values>
+                    <values title="Otro valor">03</values>
+                </widget>
+            </column>
+            <column name="standard-identification" numcolumns="3" order="110">
+                <widget type="select" fieldname="estandard" maxlength="6" required="true">
+                    <values title="Estándar de adopción del contribuyente">999</values>
+                    <values title="UNSPSC">001</values>
+                    <values title="GTIN">010</values>
+                    <values title="Partida Arancelarias">020</values>
+                </widget>
+            </column>
+        </group>
+    </columns>
+</view>

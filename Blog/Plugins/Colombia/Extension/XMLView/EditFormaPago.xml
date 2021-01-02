@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <columns>
+        <group name="dian" numcolumns="12" valign="bottom">
+            <column name="payment-type" numcolumns="3" order="100">
+                <widget type="select" fieldname="tipo" required="true">
+                    <values title="Contado">1</values>
+                    <values title="Crédito">2</values>
+                </widget>
+            </column>
+            <column name="type-payment-method" numcolumns="6" order="110">
+                <widget type="select" fieldname="metodopago" maxlength="3" required="true">
+                    <values title="Instrumento no definido">1</values>
+                    <values title="Efectivo">10</values>
+                    <values title="Reversión Crédito Ahorro">11</values>
+                    <values title="Reversión Débito Ahorro">12</values>
+                    <values title="Crédito Ahorro">13</values>
+                    <values title="Débito Ahorro">14</values>
+                    <values title="Bookentry Crédito">15</values>
+                    <values title="Bookentry Débito">16</values>
+                    <values title="Desembolso Crédito (CCD)">17</values>
+                    <values title="Desembolso (CCD) débito">18</values>
+                    <values title="Crédito Pago negocio corporativo (CTP)">19</values>
+                    <values title="Crédito ACH">2</values>
+                    <values title="Cheque">20</values>
+                    <values title="Poyecto bancario">21</values>
+                    <values title="Proyecto bancario certificado">22</values>
+                    <values title="Cheque bancario de gerencia">23</values>
+                    <values title="Nota cambiaria esperando aceptación">24</values>
+                    <values title="Cheque certificado">25</values>
+                    <values title="Cheque Local">26</values>
+                    <values title="Débito Pago Neogcio Corporativo (CTP)">27</values>
+                    <values title="Crédito Negocio Intercambio Corporativo (CTX)">28</values>
+                    <values title="Débito Negocio Intercambio Corporativo (CTX)">29</values>
+                    <values title="Débito ACH">3</values>
+                    <values title="Transferencia Crédito">30</values>
+                    <values title="Transferencia Débito">31</values>
+                    <values title="Desembolso Crédito plus (CCD+)">32</values>
+                    <values title="Desembolso Débito plus (CCD+)">33</values>
+                    <values title="Pago y depósito pre acordado (PPD)">34</values>
+                    <values title="Desembolso Crédito (CCD)">35</values>
+                    <values title="Desembolso Débito (CCD)">36</values>
+                    <values title="Pago Negocio Corporativo Ahorros Crédito (CTP)">37</values>
+                    <values title="Pago Negocio Corporativo Ahorros Débito (CTP)">38</values>
+                    <values title="Crédito Intercambio Corporativo (CTX)">39</values>
+                    <values title="Reversión débito de demanda ACH">4</values>
+                    <values title="Débito Intercambio Corporativo (CTX)">40</values>
+                    <values title="Desembolso Crédito plus (CCD+)">41</values>
+                    <values title="Consiganción bancaria">42</values>
+                    <values title="Desembolso Débito plus (CCD+)">43</values>
+                    <values title="Nota cambiaria">44</values>
+                    <values title="Transferencia Crédito Bancario">45</values>
+                    <values title="Transferencia Débito Interbancario">46</values>
+                    <values title="Transferencia Débito Bancaria">47</values>
+                    <values title="Tarjeta Crédito">48</values>
+                    <values title="Tarjeta Débito">49</values>
+                    <values title="Reversión crédito de demanda ACH">5</values>
+                    <values title="Postgiro">50</values>
+                    <values title="Telex estándar bancario">51</values>
+                    <values title="Pago comercial urgente">52</values>
+                    <values title="Pago Tesorería Urgente">53</values>
+                    <values title="Crédito de demanda ACH">6</values>
+                    <values title="Nota promisoria">60</values>
+                    <values title="Nota promisoria firmada por el acreedor">61</values>
+                    <values title="Nota promisoria firmada por el acreedor, avalada por el banco">62</values>
+                    <values title="Nota promisoria firmada por el acreedor, avalada por un tercero">63</values>
+                    <values title="Nota promisoria firmada pro el banco">64</values>
+                    <values title="Nota promisoria firmada por un banco avalada por otro banco">65</values>
+                    <values title="Nota promisoria firmada">66</values>
+                    <values title="Nota promisoria firmada por un tercero avalada por un banco">67</values>
+                    <values title="Débito de demanda ACH">7</values>
+                    <values title="Retiro de nota por el por el acreedor">70</values>
+                    <values title="Bonos">71</values>
+                    <values title="Vales">72</values>
+                    <values title="Retiro de nota por el por el acreedor sobre un banco">74</values>
+                    <values title="Retiro de nota por el acreedor, avalada por otro banco">75</values>
+                    <values title="Retiro de nota por el acreedor, sobre un banco avalada por un tercero">76</values>
+                    <values title="Retiro de una nota por el acreedor sobre un tercero">77</values>
+                    <values title="Retiro de una nota por el acreedor sobre un tercero avalada por un banco">78</values>
+                    <values title="Mantener">8</values>
+                    <values title="Clearing Nacional o Regional">9</values>
+                    <values title="Nota bancaria transferible">91</values>
+                    <values title="Cheque local transferible">92</values>
+                    <values title="Giro referenciado">93</values>
+                    <values title="Giro urgente">94</values>
+                    <values title="Giro formato abierto">95</values>
+                    <values title="Método de pago solicitado no usuado">96</values>
+                    <values title="Clearing entre partners">97</values>
+                    <values title="Otro*">ZZZ</values>
+                </widget>
+            </column>
+        </group>
+    </columns>
+</view>

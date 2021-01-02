@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * This file is part of FacturaScripts
+ * Copyright (C) 2018-2019 Carlos Garcia Gomez <carlos@facturascripts.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ *
+ * @author Carlos García Gómez <carlos@facturascripts.com>
+-->
+<view>
+    <columns>
+        <group name="data" numcolumns="12">
+            <column name="code" display="none" order="100">
+                <widget type="text" fieldname="idcontacto" required="true"/>
+            </column>
+            <column name="customer" display="none" order="105">
+                <widget type="autocomplete" fieldname="codcliente" onclick="EditCliente">
+                    <values source="clientes" fieldcode="codcliente" fieldtitle="nombre"/>
+                </widget>
+            </column>
+            <column name="supplier" display="none" order="110">
+                <widget type="autocomplete" fieldname="codproveedor" onclick="EditProveedor">
+                    <values source="proveedores" fieldcode="codproveedor" fieldtitle="nombre"/>
+                </widget>
+            </column>
+            <column name="description" numcolumns="3" order="120">
+                <widget type="text" fieldname="descripcion" required="true"/>
+            </column>
+            <column name="address" numcolumns="9" order="130">
+                <widget type="text" fieldname="direccion" maxlength="100" icon="fas fa-map-marked"/>
+            </column>
+            <column name="post-office-box" order="140">
+                <widget type="text" fieldname="apartado" maxlength="10"/>
+            </column>
+            <column name="zip-code" order="150">
+                <widget type="text" fieldname="codpostal" maxlength="10"/>
+            </column>
+            <column name="city" numcolumns="4" order="180" overwrite="true">
+                <widget type="autocomplete" fieldname="ciudad" required="true">
+                    <values source="ciudades" fieldcode="codeid" fieldtitle="ciudad"/>
+                </widget>
+            </column>
+            <column name="province" numcolumns="3" order="170" required="true" overwrite="true">
+                <widget type="autocomplete" fieldname="provincia" required="true">
+                    <values source="provincias" fieldcode="codeid" fieldtitle="provincia"/>
+                </widget>
+            </column>
+            <column name="country" titleurl="ListPais" order="160" overwrite="true">
+                <widget type="autocomplete" fieldname="codpais" onclick="EditPais" required="true" overwrite="true">
+                    <values source="paises" fieldcode="codiso" fieldtitle="nombre"/>
+                </widget>
+            </column>
+        </group>
+    </columns>
+</view>

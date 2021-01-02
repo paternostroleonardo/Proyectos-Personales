@@ -1,0 +1,46 @@
+RewriteOptions inherit
+RewriteEngine on
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 62.4.14.198
+deny from 162.241.2.172
+deny from 51.15.191.81
+deny from 209.17.96.226
+deny from 144.168.162.250
+deny from 62.0.0.0/8
+deny from 65.0.0.0/8
+deny from 66.0.0.0/8
+deny from 1.0.0.0/8
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# BEGIN FacturaScripts code
+Options -Indexes
+
+<IfModule mod_php7.c>
+   php_value max_input_vars 5000
+   php_value post_max_size 99M
+   php_value upload_max_filesize 99M
+</IfModule>
+
+<IfModule mod_rewrite.c>
+   RewriteEngine On
+   RewriteRule . index.php [L]
+</IfModule>
+
+<IfModule mod_expires.c>
+   ExpiresActive On
+   ExpiresDefault                           "access plus 1 week"
+   ExpiresByType text/css                   "access plus 1 week"
+   ExpiresByType application/javascript     "access plus 1 week"
+   ExpiresByType text/javascript            "access plus 1 week"
+   <FilesMatch "\.(php|cgi)$">
+      ExpiresActive Off
+   </FilesMatch>
+</IfModule>
+# END FacturaScripts code

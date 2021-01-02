@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <column>
+        <name>codunidadmedida</name>
+        <type>character varying(20)</type>
+    </column>
+    <constraint>
+        <name>ca_productos_unidadmedida</name>
+        <type>FOREIGN KEY (codunidadmedida) REFERENCES unidadmedidas (codunidadmedida) ON DELETE SET NULL ON UPDATE CASCADE</type>
+    </constraint>
+</table>

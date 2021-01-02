@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <column>
+        <name>uuid</name>
+        <type>character varying(36)</type>
+        <null>yes</null>
+    </column>
+    <column>
+        <name>enviando</name>
+        <type>boolean</type>
+        <default>false</default>
+    </column>
+    <column>
+        <name>esvalido</name>
+        <type>boolean</type>
+        <default>false</default>
+    </column>
+    <column>
+        <name>codigoestado</name>
+        <type>character varying(2)</type>
+        <null>yes</null>
+    </column>
+    <column>
+        <name>estadodescription</name>
+        <type>character varying(200)</type>
+        <null>yes</null>
+    </column>
+    <column>
+        <name>mensajeestado</name>
+        <type>character varying(1000)</type>
+        <null>yes</null>
+    </column>
+    <column>
+        <name>clavedocumentoxml</name>
+        <type>character varying(96)</type>
+        <null>yes</null>
+    </column>
+    <column>
+        <name>nombrearchivoxml</name>
+        <type>character varying(50)</type>
+        <null>yes</null>
+    </column>
+    <column>
+        <name>documentoadjuntoxml</name>
+        <type>text</type>
+        <null>yes</null>
+    </column>
+    <column>
+        <name>qr_search</name>
+        <type>character varying(300)</type>
+        <null>yes</null>
+    </column>
+    <column>
+        <name>qr_graphic</name>
+        <type>character varying(2000)</type>
+        <null>yes</null>
+    </column>
+    <column>
+        <name>zip_key</name>
+        <type>character varying(50)</type>
+        <null>yes</null>
+    </column>
+    <column>
+        <name>errormensajes</name>
+        <type>text</type>
+        <null>yes</null>
+    </column>
+    <constraint>
+        <name>uniq_uuid</name>
+        <type>UNIQUE (uuid)</type>
+    </constraint>
+</table>

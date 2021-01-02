@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <columns>
+        <group name="address" numcolumns="12">
+            <column name="country" titleurl="ListPais" numcolumns="3" order="130" overwrite="true">
+                <widget type="autocomplete" fieldname="codpais" onclick="EditPais" required="true">
+                    <values source="paises" fieldcode="codiso" fieldtitle="nombre"/>
+                </widget>
+            </column>
+            <column name="province" numcolumns="3" order="140" required="true" overwrite="true">
+                <widget type="autocomplete" fieldname="provincia" required="true">
+                    <values source="provincias" fieldcode="codeid" fieldtitle="provincia"/>
+                </widget>
+            </column>
+            <column name="city" numcolumns="4" order="150" overwrite="true">
+                <widget type="autocomplete" fieldname="ciudad" required="true">
+                    <values source="ciudades" fieldcode="codeid" fieldtitle="ciudad"/>
+                </widget>
+            </column>
+        </group>
+        <group name="dian" numcolumns="12" icon="fas fa-asterisk" title="FE">
+            <column name="type-liability" numcolumns="6" order="100">
+                <widget type="select" fieldname="responsabilidad" maxlength="6" required="true">
+                    <values title="Obligado a Facturar Electrónicamente Modelo 2242">O-37</values>
+                    <values title="Agente de carga internacional">A-01</values>
+                    <values title="Agente marítimo">A-02</values>
+                    <values title="Almacén general de depósito">A-03</values>
+                    <values title="Comercializadora internacional (C.I.)">A-04</values>
+                    <values title="Comerciante de la zona aduanera especial de Inírida, Puerto Carreño, Cumaribo y Primavera">A-05</values>
+                    <values title="Comerciantes de la zona de régimen aduanero especial de Leticia">A-06</values>
+                    <values title="Comerciantes de la zona de régimen aduanero especial de Maicao, Uribia y Manaure">A-07</values>
+                    <values title="Comerciantes de la zona de régimen aduanero especial de Urabá, Tumaco y Guapí">A-08</values>
+                    <values title="Comerciantes del puerto libre de San Andrés, Providencia y Santa Catalina">A-09</values>
+                    <values title="Depósito público de apoyo logístico internacional">A-10</values>
+                    <values title="Depósito privado para procesamiento industrial">A-11</values>
+                    <values title="Depósito privado de transformación o ensamble">A-12</values>
+                    <values title="Depósito franco">A-13</values>
+                    <values title="Depósito privado aeronáutico">A-14</values>
+                    <values title="Depósito privado para distribución internacional">A-15</values>
+                    <values title="Depósito privado de provisiones de a bordo para consumo y para llevar">A-16</values>
+                    <values title="Depósito privado para envíos urgentes">A-17</values>
+                    <values title="Depósito privado">A-18</values>
+                    <values title="Depósito público">A-19</values>
+                    <values title="Depósito público para distribución internacional">A-20</values>
+                    <values title="Exportador de café">A-21</values>
+                    <values title="Exportador">A-22</values>
+                    <values title="Importador">A-23</values>
+                    <values title="Intermediario de tráfico postal y envíos urgentes">A-24</values>
+                    <values title="Operador de transporte multimodal">A-25</values>
+                    <values title="Sociedad de intermediación aduanera">A-26</values>
+                    <values title="Titular de puertos y muelles de servicio público o privado">A-27</values>
+                    <values title="Transportador 232nfor régimen de importación y/o exportación">A-28</values>
+                    <values title="Transportista nacional para operaciones del régimen de tránsito aduanero">A-29</values>
+                    <values title="Usuario comercial zona franca">A-30</values>
+                    <values title="Usuario industrial de bienes zona franca">A-32</values>
+                    <values title="Usuario industrial de servicios zona franca">A-34</values>
+                    <values title="Usuario operador de zona franca">A-36</values>
+                    <values title="Usuario aduanero permanente">A-37</values>
+                    <values title="Usuario altamente exportador">A-38</values>
+                    <values title="Usuario de zonas económicas especiales de exportación">A-39</values>
+                    <values title="Deposito privado de instalaciones industriales">A-40</values>
+                    <values title="Beneficiarios de programas especiales de exportación PEX">A-41</values>
+                    <values title="Depósitos privados para mercancías en tránsito San Andrés">A-42</values>
+                    <values title="Observadores de las operaciones de importación">A-43</values>
+                    <values title="Usuarios sistemas especiales Importación exportación">A-44</values>
+                    <values title="Transportador 232nformac régimen de importación y/o exportación">A-46</values>
+                    <values title="Transportador terrestre régimen de importación y/o exportación">A-47</values>
+                    <values title="Aeropuerto de servicio publico o privado">A-48</values>
+                    <values title="Transportador fluvial régimen de importación">A-49</values>
+                    <values title="Usuario industrial zona franca especial">A-50</values>
+                    <values title="Agencias de aduanas 1">A-53</values>
+                    <values title="Usuario Operador Zona Franca Especial">A-54</values>
+                    <values title="Agencias de aduanas 2">A-55</values>
+                    <values title="Agencias de aduanas 3">A-56</values>
+                    <values title="Agencias de aduanas 4">A-57</values>
+                    <values title="Transportador aéreo nacional">A-58</values>
+                    <values title="Transportador aéreo, marítimo o fluvial modalidad Cabotaje">A-60</values>
+                    <values title="Importador de alimentos de consumo humano y animal">A-61</values>
+                    <values title="Importador Ocasional">A-62</values>
+                    <values title="Importador de maquinaría y sus partes Decreto 2261 de 2012">A-63</values>
+                    <values title="Beneficiario Programa de Fomento Industria Automotriz-PROFIA">A-64</values>
+                    <values title="Otro tipo de agente aduanero">A-99</values>
+                    <values title="Agencia">E-01</values>
+                    <values title="Establecimiento de comercio">E-02</values>
+                    <values title="Centro de explotación agrícola">E-03</values>
+                    <values title="Centro de explotación animal">E-04</values>
+                    <values title="Centro de explotación minera">E-05</values>
+                    <values title="Centro de explotación de transformación">E-06</values>
+                    <values title="Centro de explotación de servicios">E-07</values>
+                    <values title="Oficina">E-08</values>
+                    <values title="Sede">E-09</values>
+                    <values title="Sucursal">E-10</values>
+                    <values title="Consultorio">E-11</values>
+                    <values title="Administraciones">E-12</values>
+                    <values title="Seccionales">E-13</values>
+                    <values title="Regionales">E-14</values>
+                    <values title="Intendencias">E-15</values>
+                    <values title="Local o negocio">E-16</values>
+                    <values title="Punto de venta">E-17</values>
+                    <values title="Fábrica">E-18</values>
+                    <values title="Taller">E-19</values>
+                    <values title="Cantera">E-20</values>
+                    <values title="Pozo de Petróleo y Gas">E-21</values>
+                    <values title="Otro lug de tipo de extrac explotación de recursos naturales">E-22</values>
+                    <values title="Otro tipo de establecimiento">E-99</values>
+                    <values title="Ingresos y patrimonio">O-06</values>
+                    <values title="Retención en la fuente a título de renta">O-07</values>
+                    <values title="Retención timbre nacional">O-08</values>
+                    <values title="Retención en la fuente en el impuesto sobre las ventas">O-09</values>
+                    <values title="Gran contribuyente">O-13</values>
+                    <values title="Informante de exógena">O-14</values>
+                    <values title="Autorretenedor">O-15</values>
+                    <values title="Obligación de facturar por ingresos de bienes y/o servicios excluidos">O-16</values>
+                    <values title="Profesionales de compra y venta de divisas">O-17</values>
+                    <values title="Productor y/o exportador de bienes exentos">O-19</values>
+                    <values title="Obligado a cumplir deberes formales a nombre de terceros">O-22</values>
+                    <values title="Agente de retención IVA">O-23</values>
+                    <values title="Impuesto Nacional a la Gasolina y al ACPM">O-32</values>
+                    <values title="Impuesto Nacional al consumo">O-33</values>
+                    <values title="Régimen simplificado impuesto nacional consumo rest y bares">O-34</values>
+                    <values title="Establecimiento Permanente">O-36</values>
+                    <values title="Facturación Electrónica Voluntaria Modelo 2242">O-38</values>
+                    <values title="Proveedor de Servicios Tecnológicos PST Modelo 2242">O-39</values>
+                    <values title="Régimen simple de tributación">O-47</values>
+                    <values title="Impuesto sobre las ventas – IVA">O-48</values>
+                    <values title="No responsable de IVA">O-49</values>
+                    <values title="Facturador electrónico">O-52</values>
+                    <values title="Otro tipo de obligado">O-99</values>
+                    <values title="Clientes del Exterior">R-00-PN</values>
+                    <values title="Apoderado especial PJ">R-06-PJ</values>
+                    <values title="Apoderado general PJ">R-07-PJ</values>
+                    <values title="Factor PJ">R-12-PJ</values>
+                    <values title="Factor PN">R-12-PN</values>
+                    <values title="Mandatario PJ">R-16-PJ</values>
+                    <values title="Mandatario PN">R-16-PN</values>
+                    <values title="Agente Interventor PN">R-25-PN</values>
+                    <values title="Otro tipo de responsable PJ">R-99-PJ</values>
+                    <values title="No responsable PN">R-99-PN</values>
+                    <values title="No aplica">ZZ</values>
+                </widget>
+            </column>
+            <column name="type-tax-detail" numcolumns="6" order="110">
+                <widget type="select" fieldname="detalletributario" maxlength="6" required="true">
+                    <values title="IVA">01</values>
+                    <values title="INC">04</values>
+                    <values title="INC Bolsas">22</values>
+                    <values title="IVA e INC">ZA</values>
+                    <values title="No aplica">ZZ</values>
+                </widget>
+            </column>
+            <column name="language" numcolumns="6" order="120">
+                <widget type="select" fieldname="idioma" maxlength="6" required="true">
+                    <values title="Spanish; Castilian">es</values>
+                    <values title="Afar">aa</values>
+                    <values title="Abkhazian">ab</values>
+                    <values title="Avestan">ae</values>
+                    <values title="Afrikaans">af</values>
+                    <values title="Akan">ak</values>
+                    <values title="Amharic">am</values>
+                    <values title="Aragonese">an</values>
+                    <values title="Arabic">ar</values>
+                    <values title="Assamese">as</values>
+                    <values title="Avaric">av</values>
+                    <values title="Aymara">ay</values>
+                    <values title="Azerbaijani">az</values>
+                    <values title="Bashkir">ba</values>
+                    <values title="Belarusian">be</values>
+                    <values title="Bulgarian">bg</values>
+                    <values title="Bihari languages">bh</values>
+                    <values title="Bislama">bi</values>
+                    <values title="Bambara">bm</values>
+                    <values title="Bengali">bn</values>
+                    <values title="Tibetan">bo</values>
+                    <values title="Breton">br</values>
+                    <values title="Bosnian">bs</values>
+                    <values title="Catalan; Valencian">ca</values>
+                    <values title="Chechen">ce</values>
+                    <values title="Chamorro">ch</values>
+                    <values title="Corsican">co</values>
+                    <values title="Cree">cr</values>
+                    <values title="Czech">cs</values>
+                    <values title="Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic">cu</values>
+                    <values title="Chuvash">cv</values>
+                    <values title="Welsh">cy</values>
+                    <values title="Danish">da</values>
+                    <values title="German">de</values>
+                    <values title="Divehi; Dhivehi; Maldivian">dv</values>
+                    <values title="Dzongkha">dz</values>
+                    <values title="Ewe">ee</values>
+                    <values title="Greek; Modern (1453-)">el</values>
+                    <values title="English">en</values>
+                    <values title="Esperanto">eo</values>
+                    <values title="Estonian">et</values>
+                    <values title="Basque">eu</values>
+                    <values title="Persian">fa</values>
+                    <values title="Fulah">ff</values>
+                    <values title="Finnish">fi</values>
+                    <values title="Fijian">fj</values>
+                    <values title="Faroese">fo</values>
+                    <values title="French">fr</values>
+                    <values title="Western Frisian">fy</values>
+                    <values title="Irish">ga</values>
+                    <values title="Gaelic; Scottish Gaelic">gd</values>
+                    <values title="Galician">gl</values>
+                    <values title="Guarani">gn</values>
+                    <values title="Gujarati">gu</values>
+                    <values title="Manx">gv</values>
+                    <values title="Hausa">ha</values>
+                    <values title="Hebrew">he</values>
+                    <values title="Hindi">hi</values>
+                    <values title="Hiri Motu">ho</values>
+                    <values title="Croatian">hr</values>
+                    <values title="Haitian; Haitian Creole">ht</values>
+                    <values title="Hungarian">hu</values>
+                    <values title="Armenian">hy</values>
+                    <values title="Herero">hz</values>
+                    <values title="Interlingua (International Auxiliary Language Association)">ia</values>
+                    <values title="Indonesian">id</values>
+                    <values title="Interlingue; Occidental">ie</values>
+                    <values title="Igbo">ig</values>
+                    <values title="Sichuan Yi; Nuosu">ii</values>
+                    <values title="Inupiaq">ik</values>
+                    <values title="Ido">io</values>
+                    <values title="Icelandic">is</values>
+                    <values title="Italian">it</values>
+                    <values title="Inuktiut">iu</values>
+                    <values title="Japanese">ja</values>
+                    <values title="Javanese">jv</values>
+                    <values title="Georgian">ka</values>
+                    <values title="Kongo">kg</values>
+                    <values title="Kikuyu; Gikuyu">ki</values>
+                    <values title="Kuanyama; Kwanyama">kj</values>
+                    <values title="Kazakh">kk</values>
+                    <values title="Kalaallisut; Greenlandic">kl</values>
+                    <values title="Central Khmer">km</values>
+                    <values title="Kannada">kn</values>
+                    <values title="Korean">ko</values>
+                    <values title="Kanuri">kr</values>
+                    <values title="Kashmiri">ks</values>
+                    <values title="Kurdish">ku</values>
+                    <values title="Komi">kv</values>
+                    <values title="Cornish">kw</values>
+                    <values title="Kirghiz; Kyrgyz">ky</values>
+                    <values title="Latin">la</values>
+                    <values title="Luxembourgish; Letzeburgesch">lb</values>
+                    <values title="Ganda">lg</values>
+                    <values title="Limburgan; Limburger; Limburgish">li</values>
+                    <values title="Lingala">ln</values>
+                    <values title="Lao">lo</values>
+                    <values title="Lithuanian">lt</values>
+                    <values title="Luba-Katanga">lu</values>
+                    <values title="Latvian">lv</values>
+                    <values title="Malagasy">mg</values>
+                    <values title="Marshallese">mh</values>
+                    <values title="Maori">mi</values>
+                    <values title="Macedonian">mk</values>
+                    <values title="Malayalam">ml</values>
+                    <values title="Mongolian">mn</values>
+                    <values title="Moldavian; Moldovan">mo</values>
+                    <values title="Marathi">mr</values>
+                    <values title="Malay">ms</values>
+                    <values title="Maltese">mt</values>
+                    <values title="Burmese">my</values>
+                    <values title="Nauru">na</values>
+                    <values title="Bokmal Norwegian; Norwegian Bokmal">nb</values>
+                    <values title="Ndebele; North; North Ndebele">nd</values>
+                    <values title="Nepali">ne</values>
+                    <values title="Ndonga">ng</values>
+                    <values title="Dutch; Flemish">nl</values>
+                    <values title="Norwegian Nynorsk; Nynorsk, Norwegian">nn</values>
+                    <values title="Norwegian">no</values>
+                    <values title="Ndebele; South; South Ndebele">nr</values>
+                    <values title="Navajo; Navaho">nv</values>
+                    <values title="Chichewa; Chewa; Nyanja">ny</values>
+                    <values title="Occitan (post 1500)">oc</values>
+                    <values title="Ojibwa">oj</values>
+                    <values title="Oromo">om</values>
+                    <values title="Oriya">or</values>
+                    <values title="Ossetian; Ossetic">os</values>
+                    <values title="Panjabi; Punjabi">pa</values>
+                    <values title="Pali">pi</values>
+                    <values title="Polish">pl</values>
+                    <values title="Pushto; Pashto">ps</values>
+                    <values title="Portuguese">pt</values>
+                    <values title="Quechua">qu</values>
+                    <values title="Romansh">rm</values>
+                    <values title="Rundi">rn</values>
+                    <values title="Romanian">ro</values>
+                    <values title="Russian">ru</values>
+                    <values title="Kinyarwanda">rw</values>
+                    <values title="Sanskrit">sa</values>
+                    <values title="Sardinian">sc</values>
+                    <values title="Sindhi">sd</values>
+                    <values title="Northern Sami">se</values>
+                    <values title="Sango">sg</values>
+                    <values title="Sinhala; Sinhalese">si</values>
+                    <values title="Slovak">sk</values>
+                    <values title="Slovenian">sl</values>
+                    <values title="Samoan">sm</values>
+                    <values title="Shona">sn</values>
+                    <values title="Somali">so</values>
+                    <values title="Albanian">sq</values>
+                    <values title="Serbian">sr</values>
+                    <values title="Swati">ss</values>
+                    <values title="Sotho, Southern">st</values>
+                    <values title="Sundanese">su</values>
+                    <values title="Swedish">sv</values>
+                    <values title="Swahili">sw</values>
+                    <values title="Tamil">ta</values>
+                    <values title="Telugu">te</values>
+                    <values title="Tajik">tg</values>
+                    <values title="Thai">th</values>
+                    <values title="Tigrinya">ti</values>
+                    <values title="Turkmen">tk</values>
+                    <values title="Tagalog">tl</values>
+                    <values title="Tswana">tn</values>
+                    <values title="Tonga (Tonga Islands)">to</values>
+                    <values title="Turkish">tr</values>
+                    <values title="Tsonga">ts</values>
+                    <values title="Tatar">tt</values>
+                    <values title="Twi">tw</values>
+                    <values title="Tahitian">ty</values>
+                    <values title="Uighur; Uyghur">ug</values>
+                    <values title="Ukrainian">uk</values>
+                    <values title="Urdu">ur</values>
+                    <values title="Uzbek">uz</values>
+                    <values title="Venda">ve</values>
+                    <values title="Vietnamese">vi</values>
+                    <values title="Volapük">vo</values>
+                    <values title="Walloon">wa</values>
+                    <values title="Wolof">wo</values>
+                    <values title="Xhosa">xh</values>
+                    <values title="Yiddish">yi</values>
+                    <values title="Yoruba">yo</values>
+                    <values title="Zhuang; Chuang">za</values>
+                    <values title="Chinese">zh</values>
+                    <values title="Zulu">zu</values>
+                </widget>
+            </column>
+            <column name="commercial-registration" numcolumns="6" order="130">
+                <widget type="text" maxlength="50" fieldname="matriculamercantil"/>
+            </column>
+        </group>
+    </columns>
+</view>

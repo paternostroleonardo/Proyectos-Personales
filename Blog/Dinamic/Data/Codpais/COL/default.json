@@ -1,0 +1,12 @@
+{
+    "default": {
+        "codpais": "COL",
+        "codserie": "FVN",
+        "codpago": "CONT",
+        "coddivisa": "COP",
+        "tablesize": "small",
+        "tipoidfiscal": "NIT",
+        "codimpuesto": "IVA19",
+        "currency_position": "left"
+    }
+}
